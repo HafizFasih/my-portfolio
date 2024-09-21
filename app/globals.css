@@ -14,4 +14,12 @@ background-image: url(../public/wod.png);
 -webkit-background-clip: text;
 background-size: contain;
 -webkit-text-fill-color: transparent;
-}  
+} 
+
+@layer utilities {
+  .bg-clip-text {
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
