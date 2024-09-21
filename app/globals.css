@@ -9,7 +9,7 @@
   font-style: normal;
 }
 
-.bg-gradient-to-r {
+.txt {
 background-image: url(../public/wod.png);
 -webkit-background-clip: text;
 background-size: contain;
