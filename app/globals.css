@@ -9,7 +9,7 @@
   font-style: normal;
 }
 
-.txt{
+.text-transparent {
 background-image: url(../public/wod.png);
 -webkit-background-clip: text;
 background-size: contain;
