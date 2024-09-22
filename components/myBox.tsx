@@ -29,7 +29,7 @@ const MyBox: React.FC<MyBoxProps> = ({ url }) => {
     };
   }, []);
 
-  useFrame((_, delta) => {
+  useFrame((state, delta) => {
     if (box.current) {
       box.current.rotation.y += delta;
       box.current.rotation.x += delta;
