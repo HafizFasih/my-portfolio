@@ -17,7 +17,7 @@ const skills = [
 
 const Skills = () => {
   const [fov, setFov] = useState(30);
-  const [url, setUrl] = useState("./react.png");
+  const [url, setUrl] = useState("./three.png");
 
   useEffect(() => {
     const handleResize = () => {
