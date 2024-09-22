@@ -12,6 +12,7 @@ const skills = [
   { name: "tailwind css", img: "./tailwind.png",percentage:94, },
   { name: "react js", img: "./react.png",percentage:88, },
   { name: "next js", img: "./next.png",percentage:85, },
+  { name: "three js", img: "./three.png", percentage:70},
 ];
 
 const Skills = () => {
