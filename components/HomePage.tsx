@@ -16,7 +16,7 @@ const HomePage = () => {
         </p>
         <button className="relative sm:my-8 my-3 text-sm py-3 px-5 rounded-md text-zinc-900 font-semibold bg-gradient-to-r from-[#DBB187] via-[#FDFEBA] to-[#DBB187] uppercase">
           view cv
-          <a href="https://hackerthon-milestone-04.vercel.app" className="z-10 absolute h-full w-full top-0 left-0" target="_blank"></a>
+          <a href="https://resume-builder-mf.vercel.app/" className="z-10 absolute h-full w-full top-0 left-0" target="_blank"></a>
         </button>
       </div>
       {/* RIGHT SECTION */}
