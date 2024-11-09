@@ -1,6 +1,7 @@
+"use client"
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-const linkArr: string[] = ["#home", "#about", "#skills", "#projects", "#contact"];
+const linkArr: string[] = ["/home", "/about", "/skills", "/projects", "/contact"];
 
 const Navbar = () => {
   const [index, setIndex] = useState<number>(-1);
@@ -22,14 +23,6 @@ const Navbar = () => {
     };
   }, [lastScrollTop]);
 
-  const handleSmoothScroll = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-    setSlide(false);
-    setDisplay(false);
-  };
 
   const animationHandler = () => {
     setSlide(!slide);
@@ -45,15 +38,7 @@ const Navbar = () => {
         onMouseEnter={() => setIndex(ind)}
         onMouseLeave={() => setIndex(-1)}
       >
-        <a
-          href={linkArr[ind]}
-          onClick={(e) => {
-            e.preventDefault(); 
-            handleSmoothScroll(linkArr[ind]);
-          }}
-        >
-          {val}
-        </a>
+        <Link href={linkArr[ind]}>{val}</Link>
 
         <div
           className="h-[2px] duration-300 bottom-0 bg-gradient-to-r from-[#DBB187] via-[#FDFEBA] to-[#DBB187] absolute"
@@ -73,7 +58,7 @@ const Navbar = () => {
         } `}
       >
         <div className="logo relative h-10 w-10 bg-center bg-[url('/cr.png')] bg-no-repeat bg-cover">
-          <Link href="#home" className="absolute h-full w-full cursor-pointer"></Link>
+          <Link href="/home" className="absolute h-full w-full cursor-pointer"></Link>
         </div>
         <ul className="sm:flex hidden text-white h-full items-start gap-12">
           {options}

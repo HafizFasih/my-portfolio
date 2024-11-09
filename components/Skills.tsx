@@ -1,3 +1,4 @@
+"use client"
 import { Canvas } from "@react-three/fiber";
 import React, { useEffect, useState } from "react";
 import { IoMdCheckboxOutline } from "react-icons/io";
@@ -40,7 +41,7 @@ const Skills = () => {
   };
 
   return (
-    <div id="skills" className="h-auto w-full">
+    <div id="skills" className="h-auto w-full bg-zinc-900">
       <h1 className="sm:translate-y-16 translate-y-0 pt-5 bg-gradient-to-r from-[#DBB187] via-[#FDFEBA] to-[#DBB187] bg-clip-text text-transparent w-full text-center uppercase font-semibold sm:text-[6vw] text-[18vw]">skills</h1>
     <div className="relative h-auto w-full flex sm:flex-row flex-col-reverse">
       {/* LEFT SECTION */}

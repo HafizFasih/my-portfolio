@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from "react";
 import { FaAngleLeft } from "react-icons/fa";
 import { FaAngleRight } from "react-icons/fa";
