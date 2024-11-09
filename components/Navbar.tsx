@@ -27,7 +27,7 @@ const Navbar = () => {
   const animationHandler = () => {
     setSlide(!slide);
     display && setDisplay(false);
-    !display ? setTimeout(() => setDisplay(true), 500) : null;
+    !display && setTimeout(() => setDisplay(true), 500);
   };
 
   const options = ["home", "about", "skills", "projects", "contact"].map(
@@ -38,7 +38,12 @@ const Navbar = () => {
         onMouseEnter={() => setIndex(ind)}
         onMouseLeave={() => setIndex(-1)}
       >
-        <Link href={linkArr[ind]}>{val}</Link>
+        <Link href={linkArr[ind]}
+        onClick={() => {
+          setSlide(false);
+          setTimeout(() => setDisplay(true), 500)
+        }}
+        >{val}</Link>
 
         <div
           className="h-[2px] duration-300 bottom-0 bg-gradient-to-r from-[#DBB187] via-[#FDFEBA] to-[#DBB187] absolute"

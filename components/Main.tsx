@@ -8,7 +8,7 @@ import Projects from './Projects';
 
 const Main = () => {
   return (
-    <div>
+    <div className='overflow-hidden'>
       <HomePage/>
       <Seperator/>
       <About/>
