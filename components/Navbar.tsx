@@ -41,7 +41,7 @@ const Navbar = () => {
         <Link href={linkArr[ind]}
         onClick={() => {
           setSlide(false);
-          setTimeout(() => setDisplay(true), 500)
+          display && setDisplay(false);
         }}
         >{val}</Link>
 
