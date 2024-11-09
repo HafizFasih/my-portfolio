@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from "react";
 import { MdSend } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";

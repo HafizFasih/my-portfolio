@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-
 const linkArr: string[] = ["#home", "#about", "#skills", "#projects", "#contact"];
 
 const Navbar = () => {

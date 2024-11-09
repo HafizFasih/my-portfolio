@@ -12,8 +12,7 @@ const Main = () => {
   return (
     <motion.div 
     initial={{opacity:0}} animate={{opacity:1}} transition={{duration:10}}
-    className='overflow-hidden'
-    >
+    className='overflow-hidden'>
       <Navbar/>
       <HomePage/>
       <Seperator/>

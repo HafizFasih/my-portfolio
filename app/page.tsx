@@ -7,7 +7,7 @@ const Home = () => {
 
   const [displaySwitch, setDisplaySwitch] = useState(false);
 
-  const output = displaySwitch ?
+  const output:React.JSX.Element = displaySwitch ?
   <Main/>
   :
   <Laptop disChange={setDisplaySwitch}/>

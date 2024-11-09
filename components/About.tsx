@@ -77,7 +77,7 @@ const cardStructure = (cardData:cardType) => {
 )
 }
   return (
-    <div id="about" ref={aboutRef} className="relative h-auto w-full bg-zinc-900 flex flex-col items-center justify-center pb-32 pt-12">
+    <div  ref={aboutRef} className="relative h-auto w-full bg-zinc-900 flex flex-col items-center justify-center pb-32 pt-12">
       <h1 className="bg-gradient-to-b from-[#DBB187] via-[#FDFEBA] to-[#DBB187] bg-clip-text text-transparent sm:text-[7.5vw] text-[12vw] uppercase font-semibold pb-[3vw] w-full sm:text-center text-start px-4">about me</h1>
       <div className="relative h-full mmd:w-3/4 md:w-[85%] w-[98%] flex flex-col gap-8">
         <div className="line absolute top-1/2 sm:left-1/2 xs:left-20 left-10 -translate-x-1/2 -translate-y-1/2 h-full w-1 bg-gradient-to-b from-[#DBB187] via-[#FDFEBA] to-[#DBB187]"></div>
